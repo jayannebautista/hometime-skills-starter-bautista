@@ -13,8 +13,7 @@ function useMouseLocation(ref: React.RefObject<HTMLElement>) {
     const checker = (e: MouseEvent) => {
       const rectTop = Math.round(box.getBoundingClientRect().top);
       const rectLeft = Math.round(box.getBoundingClientRect().left);
-      console.log(rectTop);
-      console.log(rectLeft);
+     
       let x = e.clientX - rectLeft;
       let y = e.clientY - rectTop;
       setCoordinates({ x, y });
